@@ -112,15 +112,19 @@ postsSeeMoreBtn.addEventListener("click", () => {
 
 // Cart
 const addToCartBtnEl = document.querySelector(".add_to_cart_btn");
+const cartCountEl = document.querySelector(".cart_count");
+
 addToCartBtnEl.addEventListener("click", () => {
     open(`./pages/cart.html`, `_self`);
 })
 
-export const addedProducts = [];
+const addedProducts = JSON.parse(localStorage.getItem("cart")) || [];
 const addProducts = (data) => {
     addedProducts.push(data);
+    localStorage.setItem("cart", JSON.stringify(addedProducts));
     console.log(addedProducts);
 }
+
 
 productsWrapperEl.addEventListener("click", (event) => {
     const target = event.target;
@@ -128,5 +132,7 @@ productsWrapperEl.addEventListener("click", (event) => {
         const parentCard = target.closest(".products_card");
         const addedCardId = parentCard.dataset.id;
         getData(`/products/${addedCardId}`, addProducts);
+        cartCountEl.innerHTML = addedProducts.length + 1;
     }
 })
+cartCountEl.innerHTML = addedProducts.length;

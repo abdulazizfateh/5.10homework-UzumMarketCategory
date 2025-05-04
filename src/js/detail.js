@@ -5,7 +5,7 @@ const renderDetailData = (data) => {
     const newCardEl = document.createElement("div");
     newCardEl.innerHTML =
         `
-      <div class="product_detail_card grid grid-cols-3 gap-[50px]">
+      <div data-id="${data.id}" class="product_detail_card grid grid-cols-3 gap-[50px]">
                     <div class="col-span-2 flex flex-col gap-[18px]">
                         <div class="flex flex-col gap-[8px]">
                             <h2 class="font-DM text-[24px] font-extrabold text-primary-text">
@@ -58,7 +58,7 @@ const renderDetailData = (data) => {
                                 <div class="flex items-center justify-end gap-[12px]">
                                     <span class="font-I text-[14px] text-primary-text">${data.returnPolicy}</span>
                                 </div>
-                                <button class="bg-primary text-white w-full h-[56px] rounded-[12px]">Savatga
+                                <button data-name="detailAddToCartBtn" class="bg-primary text-white w-full h-[56px] rounded-[12px]">Savatga
                                     qo'shish</button>
                             </div>
                         </div>
@@ -141,4 +141,26 @@ window.onload = () => {
     let params = new URLSearchParams(location.search);
     getData(`/products/${params.get("q")}`, renderDetailData);
 }
+
+
+const cartCountEl = document.querySelector(".cart_count");
+console.log(cartCountEl);
+
+const addedProducts = JSON.parse(localStorage.getItem("cart")) || [];
+cartCountEl.innerHTML = addedProducts.length;
+
+const addProducts = (data) => {
+    addedProducts.push(data);
+    localStorage.setItem("cart", JSON.stringify(addedProducts));
+    console.log(addedProducts);
+}
+
+productDetailWrapperEl.addEventListener("click", (event) => {
+    if (event.target.dataset.name === "detailAddToCartBtn") {
+        const parentCard = event.target.closest(".product_detail_card");
+        const addedCardId = parentCard.dataset.id;
+        getData(`/products/${addedCardId}`, addProducts);
+        cartCountEl.innerHTML = addedProducts.length + 1;
+    }
+})
 
