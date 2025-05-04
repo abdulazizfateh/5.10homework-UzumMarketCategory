@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: RobotoVariable;
+    src: url(../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: InterVariable;
+    src: url(../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: DMSansVariable;
+    src: url(../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+
+@theme {
+    --font-R: RobotoVariable;
+    --font-I: InterVariable;
+    --font-DM: DMSansVariable;
+
+    --color-primary: #7000FF;
+    --color-primary-text: #1F2026;
+    --color-secondary-text: #595B66;
+    --color-primary-bg: #FFFFFF;
+    --color-secondary-bg: #F2F4F7;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.container,
+.nav_top_container {
+    max-width: 1304px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0 12px;
+}
+
+@media (min-width: 520px) {
+
+    .container,
+    .nav_top_container {
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 640px) {
+
+    .container,
+    .nav_top_container {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .nav_top_container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .container,
+    .nav_top_container {
+        padding: 0 32px;
+    }
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.posts_see_more_btn{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E8ED;
+    color: var(--color-primary-text);
+    font-family: var(--font-I);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: .2s ease-out;
+    &:hover {
+        background-color: #d1d3d9;
+    }
+}

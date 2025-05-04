@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.10 homework | Uzum Market</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body>
+    <header class="pt-[15px] pb-[15px] sm:pt-0 md:pb-0 bg-primary-bg">
+        <div class="nav_top bg-secondary-bg hidden sm:flex">
+            <div class="nav_top_container">
+                <div class="nav_top_wrapper min-h-[32px] flex items-center justify-between">
+                    <div class="flex items-center gap-[24px]">
+                        <div class="hidden lg:flex items-center">
+                            <img class="w-[24px]" src="./assets/images/location.svg" alt="Location Icon">
+                            <p>
+                                <span class="font-I text-[14px] text-primary-text">Shahar:</span>
+                                <a class="font-I text-[14px] font-[500] text-primary-text border-b-[1px] border-b-primary-text"
+                                    href="#">Toshkent</a>
+                            </p>
+                        </div>
+                        <div>
+                            <span class="font-I text-[14px] font-[500] text-primary-text">Topshirish punktlari</span>
+                        </div>
+                    </div>
+                    <div class="hidden sm:flex">
+                        <p class="font-I text-[14px] text-[#8B8E99]">Buyurtmangizni 1 kunda bepul yetkazib beramiz!</p>
+                    </div>
+                    <div class="flex items-center gap-[26px]">
+                        <div class="flex items-center gap-[15.62px]">
+                            <span
+                                class="hidden lg:flex font-I text-[14px] font-[500] text-secondary-text">Savol-javoblar</span>
+                            <span class="font-I text-[14px] font-[500] text-secondary-text">Buyurtmalarim</span>
+                        </div>
+                        <div class="items-center gap-[5.73px] hidden lg:flex">
+                            <img src="./assets/images/lang.svg" alt="Flag Icon">
+                            <span class="font-I text-[14px] font-[500] text-primary-text">Оʻzbekcha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav>
+                <div class="nav_main sm:pt-[18px] flex items-center gap-[32px] justify-between">
+                    <div class="">
+                      <a href="index.html"><img src="./assets/images/uzummarket-logo.svg" alt="Uzum Market Logo"></a>
+                    </div>
+                    <div class="flex items-center gap-[7px] flex-1">
+                        <button
+                            class="hidden md:flex h-[40px] items-center gap-[7.98px] px-[18px] bg-[#F0F0FF] rounded-[4px] hover:bg-[#ceccff] duration-500 ease-out">
+                            <img class="w-[24px]" src="./assets/images/catalog.svg" alt="">
+                            <span class="font-I text-[14px] font-[500] text-primary">Katalog</span>
+                        </button>
+                        <form action="index.html"
+                            class="hidden sm:flex h-[40px] flex-1 relative border-[#36364033] focus:border-primary rounded-[4px] border-[1px] overflow-hidden">
+                            <input
+                                class="w-[100%] h-[100%] font-I text-[14px] pr-[20%] outline-none text-primary-text placeholder:text-[#757575] indent-[16.62px]"
+                                type="text" placeholder="Mahsulotlar va turkumlar izlash" required>
+                            <button
+                                class="absolute top-[50%] right-0 -translate-y-[50%] w-[15%] h-[100%] flex items-center justify-center bg-[#F2F4F7] z-1">
+                                <img class="w-[24px]" src="./assets/images/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-[8px]">
+                        <button
+                            class="flex items-center gap-[8.68px] rounded-[4px] py-[8px] px-[8px] hover:bg-secondary-bg duration-100 ease-out">
+                            <img class="w-[24px]" src="./assets/images/user.svg" alt="">
+                            <span class="font-I text-[14px] font-[500] text-primary-text">Kirish</span>
+                        </button>
+                        <button
+                            class="flex items-center gap-[8.68px] rounded-[4px] py-[8px] px-[8px] hover:bg-secondary-bg duration-100 ease-out">
+                            <img class="w-[24px]" src="./assets/images/like.svg" alt="">
+                            <span class="font-I text-[14px] font-[500] text-primary-text">Saralangan</span>
+                        </button>
+                        <button
+                            class="add_to_cart_btn flex items-center gap-[8.68px] rounded-[4px] py-[8px] px-[8px] hover:bg-secondary-bg duration-100 ease-out">
+                            <img class="w-[24px]" src="./assets/images/cart.svg" alt="">
+                            <span class="font-I text-[14px] font-[500] text-primary-text">Savat</span>
+                        </button>
+                    </div>
+                    <div class="lg:hidden">
+                        <img src="./assets/images/nav-menu.svg" alt="Menu Icon">
+                    </div>
+                </div>
+                <div class="nav_bottom hidden min-[800px]:flex min-h-[58px] items-center gap-[10px] justify-between">
+                    <ul class="nav_bottom_categories flex items-center gap-[20px] overflow-auto scrollbar-hidden">
+                        <li class="items-center gap-[4px] hidden min-[1080px]:flex pr-[20px]">
+                            <img class="w-[24px]" src="./assets/images/installment-icon.svg" alt="Installment Icon">
+                            <span class="font-I text-[12.8px] font-[600] leading-[15.36px] text-primary-text text-nowrap">Muddatli
+                                to'lov</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- <section>
+            <div class="container">
+                <div class="">
+                    <img class="hidden min-[840px]:block rounded-[12px]" src="./assets/images/hero-banner.svg"
+                        alt="Banner">
+                    <img class="min-[840px]:hidden w-full h-[450px] min-[540px]:object-center object-cover object-top-right rounded-[12px]"
+                        src="./assets/images/hero-banner-mobile.jpg" alt="Banner">
+                </div>
+            </div>
+        </section> -->
+        <section class="section_products py-[40px]">
+            <div class="container">
+                <div class="products_cards_btn_wrapper">
+                    <h2 class="products_title mb-[30px] text-[28px] leading-[36px] text-primary-text font-I font-[700]">
+                        Products</h2>
+                    <div
+                        class="products_wrapper grid grid-cols-1 min-[390px]:grid-cols-2 gap-x-[12px] gap-y-[16px] min-[640px]:gap-x-[16px] min-[640px]:gap-y-[24px] min-[1024px]:gap-x-[20px] min-[1024px]:gap-y-[32px] min-[700px]:grid-cols-3 min-[1024px]:grid-cols-4 xl:grid-cols-5">
+                    </div>
+                    <button class="posts_see_more_btn cursor-pointer">Yana ko'rsatish</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pt-[25px]">
+        <div class="container">
+            <div>
+                <div class="grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+                    <ul class="lg:min-h-[206.4px] flex flex-col gap-[8px] md:gap-[16px]">
+                        <li><span class="font-R text-[14px] font-[500] leading-[19px] text-primary-text">Biz
+                                haqimizda</span></li>
+                        <li><a href=""><span class="font-R text-[12px] leading-[16px] text-[#8B8E99]">Topshirish
+                                    punktlari</span></a></li>
+                        <li><a href=""><span
+                                    class="font-R text-[12px] leading-[16px] text-[#8B8E99]">Vakansiyalar</span></a>
+                        </li>
+                    </ul>
+                    <ul class="lg:min-h-[206.4px] flex flex-col gap-[8px] md:gap-[16px]">
+                        <li><span
+                                class="font-R text-[14px] font-[500] leading-[19px] text-primary-text">Foydalanuvchilarga</span>
+                        </li>
+                        <li><a href=""><span class="font-R text-[12px] leading-[16px] text-[#8B8E99]">Biz bilan
+                                    bogʻlanish</span></a></li>
+                        <li><a href=""><span
+                                    class="font-R text-[12px] leading-[16px] text-[#8B8E99]">Savol-Javob</span></a></li>
+                    </ul>
+                    <ul class="lg:min-h-[206.4px] flex flex-col gap-[8px] md:gap-[16px]">
+                        <li><span
+                                class="font-R text-[14px] font-[500] leading-[19px] text-primary-text">Tadbirkorlarga</span>
+                        </li>
+                        <li><a href=""><span class="font-R text-[12px] leading-[16px] text-[#8B8E99]">Uzumda
+                                    soting</span></a></li>
+                        <li><a href=""><span class="font-R text-[12px] leading-[16px] text-[#8B8E99]">Sotuvchi
+                                    kabinetiga kirish</span></a></li>
+                    </ul>
+                    <ul class="lg:min-h-[206.4px] flex flex-col gap-[8px] md:gap-[16px] mb-[32px] sm:mb-0">
+                        <li><a href="#"><span
+                                    class="font-R text-[14px] font-[500] leading-[19px] text-primary-text">Ilovani
+                                    yuklab olish</span></a></li>
+                        <li
+                            class="flex flex-col gap-[12px] min-[940px]:flex-row min-[940px]:items-center min-[940px]:gap-[24px]">
+                            <a href="#">
+                                <div class="flex items-center gap-[5px]">
+                                    <img src="./assets/images/appstore.svg" alt="">
+                                    <span class="font-I text-[12.8px] font-[500] leading-[15.36px]">AppStore</span>
+                                </div>
+                            </a>
+                            <a href="$">
+                                <div class="flex items-center gap-[5px]">
+                                    <img src="./assets/images/playmarket.svg" alt="">
+                                    <span class="font-I text-[12.8px] font-[500] leading-[15.36px]">Google Play</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-[12px] md:py-[18px] lg:py-[32px]">
+                            <p class="font-R font-[500] text-[14px] leading-[18px] text-primary-text mb-[16px]">Uzum
+                                ijtimoiy tarmoqlarda</p>
+                            <div class="flex items-center gap-[12px]">
+                                <a href="#"><img src="./assets/images/instagram.svg" alt="Instagram Icon"></a>
+                                <a href="#"><img src="./assets/images/telegram.svg" alt="Telegram Icon"></a>
+                                <a href="#"><img src="./assets/images/youtube.svg" alt="YouTube Icon"></a>
+                                <a href="$"><img src="./assets/images/facebook.svg" alt="Facebook Icon"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="flex flex-col gap-[20px] min-h-[50px] py-[16px] border-t-[1px] border-[#d7d7d9] lg:flex-row lg:justify-between">
+                    <div class="flex flex-col gap-[16px] lg:flex-row">
+                        <p class="font-R font-[500] text-[14px] leading-[18px] text-primary-text">Maxfiylik kelishuvi
+                        </p>
+                        <p class="font-R font-[500] text-[14px] leading-[18px] text-primary-text">Foydalanuvchi
+                            kelishuvi</p>
+                    </div>
+                    <p class="font-R text-[11px] leading-[14px] text-[#8B8E99]">«2024© XK MCHJ «UZUM MARKET». STIR
+                        309376127. Barcha huquqlar himoyalangan»</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
