@@ -79,7 +79,7 @@ const renderCategoryList = (data) => {
 }
 
 let count = 0;
-let cardPerLoad = 48;
+let cardPerLoad = 10;
 
 navBottomCategories.addEventListener("click", (event) => {
     console.log(event.target.dataset.id);
